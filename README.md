@@ -48,6 +48,7 @@ Instagram clone with Express + Prisma + React and React Native
 - yarn add passport-jwt passport
 - passport는 인증 관련한 모든 일을 함 jwt토큰이나 쿠키에서 정보를 가져와 사용자에 저장
   토큰정보를 가져와 request에 붙여줌, 토큰을 가져와서 해독한 후에 사용자 객체를 request함
+- yarn add jsonwebtoken : https://www.npmjs.com/package/jsonwebtoken
 
 # 기타
 
