@@ -44,6 +44,12 @@ Instagram clone with Express + Prisma + React and React Native
 - yarn add nodemailer
 - yarn add nodemailer-sendgrid-transport
 
+.토큰생성(passport)
+
+- yarn add passport-jwt passport
+- passport는 인증 관련한 모든 일을 함 jwt토큰이나 쿠키에서 정보를 가져와 사용자에 저장
+  토큰정보를 가져와 request에 붙여줌, 토큰을 가져와서 해독한 후에 사용자 객체를 request함
+
 # 기타
 
 - nodemon은 파일을 저장할떄마다 실행을 새로 해주는 도구 서버를 껐다가 켤 필요가 없음
