@@ -1,5 +1,4 @@
 import { prisma } from "../../../../generated/prisma-client";
-import { USER_FRAGMENT } from "../../../fragment";
 
 export default {
   Query: {
@@ -8,6 +7,7 @@ export default {
       const { user } = request;
       const userProfile = await prisma.user({ id: user.id });
       const posts = await prisma.user({ id: user.id }).posts();
+      //console.log(userProfile);
       return {
         user: userProfile,
         posts
