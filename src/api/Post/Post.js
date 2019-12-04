@@ -30,6 +30,7 @@ export default {
     },
     user: ({ id }) => prisma.post({ id }).user(),
     comments: ({ id }) => prisma.post({ id }).comments(),
+    likes: ({ id }) => prisma.post({ id }).likes(),
     files: ({ id }) => prisma.post({ id }).files()
   }
 };
