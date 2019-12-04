@@ -1,3 +1,0 @@
-type Subscription {
-  newDM(roomId: String!): Message
-}
