@@ -20,14 +20,18 @@ export default {
         ]
       });
     },
-    likeCount: parent => {
+
+    likeCount: parent =>
       prisma
         .likesConnection({
-          where: { post: { id: parent.id } }
+          where: {
+            post: {
+              id: parent.id
+            }
+          }
         })
         .aggregate()
-        .count();
-    },
+        .count(),
     user: ({ id }) => prisma.post({ id }).user(),
     comments: ({ id }) => prisma.post({ id }).comments(),
     likes: ({ id }) => prisma.post({ id }).likes(),
