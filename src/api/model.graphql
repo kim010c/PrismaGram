@@ -6,18 +6,19 @@ type User {
   firstName: String
   lastName: String
   fullName: String
-  bio: String
   isFollowing: Boolean!
   isSelf: Boolean!
+  bio: String
   following: [User!]!
   followingCount: Int!
   followers: [User!]!
   followersCount: Int!
   posts: [Post!]!
+  postsCount: Int!
   likes: [Like!]!
   comments: [Comment!]!
   rooms: [Room!]!
-  loginSecret: String
+  loginSecret: String!
   createdAt: String
   updatedAt: String
 }
