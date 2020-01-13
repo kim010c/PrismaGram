@@ -29,7 +29,7 @@ export const sendSecretMail = (adress, secret) => {
     from: "Jongho@prismagram.com",
     to: adress,
     subject: "🔒Login Secret for Prismagram🔒",
-    html: `안녕! 보안문자야 : <Strong> ${secret}</Strong><br/>Copy paste on the app/website to log in`
+    html: `보안문자 : <Strong> ${secret}</Strong><br/>보안문자를 복사하여 Web/App에 입력해주세요`
   };
   return sendMail(email);
 };
