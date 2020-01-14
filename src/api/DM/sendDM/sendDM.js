@@ -20,9 +20,10 @@ export default {
       if (!room) {
         throw Error("Room not found");
       }
-      const getTo = await prisma
-        .room({ id: room.id })
-        .participants({ where: { id_not: user.id } });
+      const participants = await prisma.room({ id: room.id }).participants();
+      const getTo = participants.filter(
+        participant => participant.id !== user.id
+      )[0];
       return prisma.createMessage({
         text: message,
         from: {
