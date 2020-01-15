@@ -68,3 +68,5 @@ Instagram clone with Express + Prisma + React and React Native
 3.  cd src && npx copy api/\*_/_.graphql ../build/
 
 - 현재 개발 폴더에 graphql 확장자를 build 폴더로 카피하는 명령어
+
+4. heroku logs --tail 헤로쿠 로그확인 명령어
