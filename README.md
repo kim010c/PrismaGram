@@ -60,3 +60,11 @@ Instagram clone with Express + Prisma + React and React Native
 
 - https://randomkeygen.com/
 - 서명 등에 사용할 키조합을 랜덤으로 생성해주는 사이트 => CodeIgniter Encryption Keys 부분 키로 하는 가져오는 편
+
+# Deploy
+
+1.  "build": "babel src -d build" 빌드 폴더 생성 (babel/cli 설치 필요)
+2.  @babel/plugin-transform-runtime -D(개발자용)
+3.  cd src && npx copy api/\*_/_.graphql ../build/
+
+- 현재 개발 폴더에 graphql 확장자를 build 폴더로 카피하는 명령어
