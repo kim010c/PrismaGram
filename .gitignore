@@ -92,6 +92,5 @@ public/
 .dynamodb/
 
 generated
-prisma.yml
 Memo
 build
